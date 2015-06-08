@@ -16,7 +16,7 @@
 zstyle ':prezto:*:*' color 'yes'
 
 # Set the Zsh modules to load (man zshmodules).
-# zstyle ':prezto:load' zmodule 'attr' 'stat'
+ zstyle ':prezto:load' zmodule 'attr' 'stat'
 
 # Set the Zsh functions to load (man zshcontrib).
 # zstyle ':prezto:load' zfunction 'zargs' 'zmv'
@@ -32,6 +32,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'git' \
   'prompt'
 
 #
@@ -85,7 +86,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'skwp'
 
 #
 # Ruby
@@ -154,4 +155,23 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
-# zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+ zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+
+##################################################
+#              Useful Aliases 
+##################################################
+
+################ OSF STEs########################
+alias aos='ssh aos-gns.osf.alma.cl -X -Y' 
+alias aos2='ssh aos2-gns.osf.alma.cl -X -Y' 
+alias tfint='ssh tfint-gns.osf.alma.cl -X -Y' 
+alias tfeng='ssh tfeng-gns.osf.alma.cl -X -Y' 
+alias tfsd='ssh tfsd-gns.osf.alma.cl -X -Y' 
+alias tfohg='ssh tfohg-gns.osf.alma.cl -X -Y' 
+
+################ SCO STEs########################
+alias acse='ssh acse-gns.sco.alma.cl -X -Y'
+alias sco='ssh sco-gns.sco.alma.cl -X -Y'
+alias sco2='ssh sco2-gns.sco.alma.cl -X -Y'
+alias sco3='ssh sco3-gns.sco.alma.cl -X -Y'
+alias sco4='ssh sco4-gns.sco.alma.cl -X -Y'
