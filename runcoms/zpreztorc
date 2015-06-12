@@ -32,6 +32,8 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'homebrew' \
+  'osx' \
   'git' \
   'prompt'
 
@@ -70,7 +72,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # zstyle ':prezto:module:history-substring-search:color' not-found ''
 
 # Set the search globbing flags.
-# zstyle ':prezto:module:history-substring-search' globbing-flags ''
+ zstyle ':prezto:module:history-substring-search' globbing-flags ''
 
 #
 # Pacman
@@ -118,25 +120,25 @@ zstyle ':prezto:module:prompt' theme 'skwp'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'cursor' \
-#   'root'
+ zstyle ':prezto:module:syntax-highlighting' highlighters \
+   'main' \
+   'brackets' \
+   'pattern' \
+   'cursor' \
+   'root'
 #
 # Set syntax highlighting styles.
-# zstyle ':prezto:module:syntax-highlighting' styles \
-#   'builtin' 'bg=blue' \
-#   'command' 'bg=blue' \
-#   'function' 'bg=blue'
+ zstyle ':prezto:module:syntax-highlighting' styles \
+   'builtin' 'bg=blue' \
+   'command' 'bg=blue' \
+   'function' 'bg=blue'
 
 #
 # Terminal
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
@@ -175,3 +177,8 @@ alias sco='ssh sco-gns.sco.alma.cl -X -Y'
 alias sco2='ssh sco2-gns.sco.alma.cl -X -Y'
 alias sco3='ssh sco3-gns.sco.alma.cl -X -Y'
 alias sco4='ssh sco4-gns.sco.alma.cl -X -Y'
+
+############## BUILDFARM ######################
+alias buildosf='ssh root@buildfarm.osf.alma.cl'
+alias buildsco='ssh root@buildfarm.sco.alma.cl'
+alias buildart='ssh root@10.195.14.133'
